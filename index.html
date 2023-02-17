@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Password Strength Checker</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/2.7.6/idangerous.swiper.css'><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+		import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+	  
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+		  apiKey: "AIzaSyBj1EdXKNnTYjrXJ81jsf0XQzgMPHcZmdQ",
+		  authDomain: "msc-project-a9083.firebaseapp.com",
+		  projectId: "msc-project-a9083",
+		  storageBucket: "msc-project-a9083.appspot.com",
+		  messagingSenderId: "994701052822",
+		  appId: "1:994701052822:web:88266b479fbc8028c7ebb7",
+		  measurementId: "G-REV23G1FVH"
+		};
+	  
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+	  </script>
+	<div id="bot">
+		<p>Hi, I'm Stolen. I'm Privacy Enhancement Assistant.</p>
+		<p>You can check your privacy in the following below fields:</p>
+		<a href="#" onclick="checkPass(true);">Authentication</a><br>
+		<a href="#" onclick="checkbrowser(true);">Browsing the Web</a><br>
+	</div>
+
+	<div class="align" id="recommendations"><h1>Recommendations</h1></div>
+	<div  class="align" id="details"><h1>Hints and Details</h1></div>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/2.7.6/idangerous.swiper.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script><script  src="./script.js"></script>
+</body>
+</html>
